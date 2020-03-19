@@ -1,8 +1,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="http://www.evocorp.com.br">
-    <img src="https://www.evocorp.com.br/assets/images/evocorp.png" alt="Logo">
+  <a href="http://www.evocorp.com.br" target="_blank">
+    <img src="https://www.evocorp.com.br/assets/images/evocorp.png" height="150" width="150" alt="Logo">
   </a>
 
   <h3 align="center">Template EVOCORP Basic</h3>
