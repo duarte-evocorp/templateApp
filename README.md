@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="http://www.evocorp.com.br">
+  <a href="http://www.evocorp.com.br" target="_blank">
     <img src="https://www.evocorp.com.br/assets/images/evocorp.png" alt="Logo">
   </a>
 
