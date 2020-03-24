@@ -34,10 +34,15 @@ Abaixo segue o que foi utilizado na criação deste template:
 
 - [React Native](http://facebook.github.io/react-native/) - O React Native é um framework que permite o desenvolvimento de aplicações mobile usando JavaScript e React;
 - [Axios](https://github.com/axios/axios) - O Axios é um cliente HTTP baseado em Promises para Browser e NodeJS;
-- [React Redux](https://github.com/reduxjs/react-redux) - 
-- [Redux](https://redux.js.org/) -
+- [React Redux](https://github.com/reduxjs/react-redux) - È uma biblioteca de ligação de interface que liga o Redux com o React;
+- [Redux](https://redux.js.org/) - È uma biblioteca de gerenciamento de estado;
 - [Redux Saga](https://redux-saga.js.org/) - È uma biblioteca que gerencia requisições assíncronas;
-- [Styled Components](https://styled-components.com/) - 
+- [Styled Components](https://styled-components.com/) - Biblioteca para gerenciamento de estilos;
+- [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons) - Uma biblioteca com um grande pacote de icones;
+- [React Native Simple Toast](https://github.com/vonovak/react-native-simple-toast) - Componente Nativo Toast
+- [Date FNS](https://github.com/date-fns/date-fns#readme) - Biblioteca para manipulação de datas;
+- [React Navigation](https://reactnavigation.org/) - Biblioteca para gerenciamento de paginas;
+
 
 ## Começando
 
@@ -58,66 +63,66 @@ evoTemplateApp
 ├── app/
 │   ├── assets/
 │   │   └── fonts/
-|   |   └── images/
-|   ├── components/
-|   |   └── Button/
-|   |   |   └── index.js
-|   |   |   └── styles.js
-|   |   └── Icons/
-|   |   |   └── index.js
+│   │   └── images/
+│   ├── components/
+│   │   └── Button/
+│   │   │   └── index.js
+│   │   │   └── styles.js
+│   │   └── Icons/
+│   │   │   └── index.js
 │   │   └── StatusBar/
 │   │   │   └── index.js
-|   |   └── Text/
-|   |   |   └── index.js
-|   |   └── Toast/
-|   |   |   └── index.js
+│   │   └── Text/
+│   │   │   └── index.js
+│   │   └── Toast/
+│   │   │   └── index.js
 │   │   └── Welcome/
 │   │   │   └── index.js
 │   │   │   └── styles.js
 │   └── index.js
-|   ├── constants/
-|   |   └── data_types.js
-|   |   └── PAGES.
-|   |   └── ToastSettings.js
-|   |   └── index.js
+│   ├── constants/
+│   │   └── data_types.js
+│   │   └── PAGES.
+│   │   └── ToastSettings.js
+│   │   └── index.js
 │   ├── helpers/
 │   │   └── index.js
 │   │   └── dataFormat.js
-|   |   └── getKeyByValue.js
-|   |   └── normalize.js
-|   |   └── prefixInTypes.js
-|   ├── modules/
-|   |   ├── Information/
-|   |   |   └── actions.js
-|   |   |   └── index.js
-|   |   |   └── reducers.js
-|   |   |   └── saga.js
-|   |   |   └── types.js
-|   ├── pages/
-|   |   ├── Componentes/
-|   |   |   └── index.js
-|   |   |   └── styles.js
-|   |   |   └── view.js
-|   |   ├── Details/
-|   |   |   └── index.js
-|   |   |   └── styles.js
-|   |   |   └── view.js
-|   |   ├── Home/
-|   |   |   └── index.js
-|   |   |   └── styles.js
-|   |   |   └── view.js
+│   │   └── getKeyByValue.js
+│   │   └── normalize.js
+│   │   └── prefixInTypes.js
+│   ├── modules/
+│   │   ├── Information/
+│   │   │   └── actions.js
+│   │   │   └── index.js
+│   │   │   └── reducers.js
+│   │   │   └── saga.js
+│   │   │   └── types.js
+│   ├── pages/
+│   │   ├── Componentes/
+│   │   │   └── index.js
+│   │   │   └── styles.js
+│   │   │   └── view.js
+│   │   ├── Details/
+│   │   │   └── index.js
+│   │   │   └── styles.js
+│   │   │   └── view.js
+│   │   ├── Home/
+│   │   │   └── index.js
+│   │   │   └── styles.js
+│   │   │   └── view.js
 |   ├── routers/
-|   |   └── index.js
-|   ├── services/
-|   |   └── Api.js
-|   |   └── ErrorResponseHandler.js
-|   |   └── index.js
-|   |   └── MessageResponseHandler.js
-|   ├── store/
-|   |   └── index.js
-|   |   └── middlewares.js
-|   |   └── reducers.js
-|   |   └── sagas.js
+│   │   └── index.js
+│   ├── services/
+│   │   └── Api.js
+│   │   └── ErrorResponseHandler.js
+│   │   └── index.js
+│   │   └── MessageResponseHandler.js
+│   ├── store/
+│   │   └── index.js
+│   │   └── middlewares.js
+│   │   └── reducers.js
+│   │   └── sagas.js
 │   ├── styles/
 │   │   └── images.js
 │   │   └── index.js
