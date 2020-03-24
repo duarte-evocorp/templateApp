@@ -9,6 +9,7 @@ import { theme } from '../styles';
 import HomeScreen from '../pages/Home';
 import DetailsScreen from '../pages/Details';
 import ComponentesScreen from '../pages/Componentes';
+import FormScreen from '../pages/Form';
 
 const AppStack = createStackNavigator();
 
@@ -42,6 +43,12 @@ function App() {
                name={PAGES.Components.name}
                options={{ title: PAGES.Components.title }}
                component={ComponentesScreen}
+            />
+
+            <AppStack.Screen
+               name={PAGES.Form.name}
+               options={{ title: PAGES.Form.title }}
+               component={FormScreen}
             />
          </AppStack.Navigator>
       </NavigationContainer>

@@ -9,6 +9,10 @@ const PAGES = {
     Components: {
         name: 'Components',
         title: 'Components'
+    },
+    Form: {
+        name: 'Form',
+        title: 'Formulário'
     }
 }
 

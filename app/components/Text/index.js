@@ -11,7 +11,9 @@ const Typography = props => {
         props.white && styles.white,
         props.danger && styles.danger,
         props.h1 && styles.h1,
-        props.h2 && styles.h2
+        props.h2 && styles.h2,
+        props.caption && styles.caption,
+        props.label && styles.label
     ];
 
     return (
@@ -29,5 +31,7 @@ const styles = StyleSheet.create({
     white: { color: theme.colors.white },
     danger: { color: theme.colors.danger },
     h1: theme.fonts.h1,
-    h2: theme.fonts.h2
+    h2: theme.fonts.h2,
+    caption: theme.fonts.caption,
+    label: theme.fonts.label
 });

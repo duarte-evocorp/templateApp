@@ -13,5 +13,9 @@
     "react-redux": "latest",
     "redux": "latest",
     "redux-saga": "latest",
-    "styled-components": "latest"
+    "styled-components": "latest",
+    "@unform/core": "latest",
+    "@unform/mobile": "latest",
+    "react-native-masked-text": "latest",
+    "yup": "latest"
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import ComponentesView from './view';
 
-export default function Componentes() {
+export default function Componentes(props) {
     return (
-        <ComponentesView />
+        <ComponentesView navigation={props.navigation} />
     );
 }

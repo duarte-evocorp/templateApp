@@ -10,7 +10,7 @@ const Source = {
     ionicons: 'Ionicons'
 };
 
-const Icon = (props) => {
+const Icon = props => {
     const { source, name, size = 25, color = '#fff' } = props;
 
     switch (source) {

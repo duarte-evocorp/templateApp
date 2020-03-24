@@ -30,22 +30,23 @@ export default function Welcome(props) {
             resizeMode={'stretch'}
          >
             <Container>
+               {!props.form &&
+                  <DollarContainer>
+                     <InfoContainer>
+                        <Text h2>{info.dollar && info.dollar.name}</Text>
 
-               <DollarContainer>
-                  <InfoContainer>
-                     <Text h2>{info.dollar && info.dollar.name}</Text>
+                        {info.dollar.create_date &&
+                           <Text>
+                              Ultima atualização: {dataFormat.relative(info.dollar.create_date, new Date())}
+                           </Text>
+                        }
+                     </InfoContainer>
 
-                     {info.dollar.create_date &&
-                        <Text>
-                           Ultima atualização: {dataFormat.relative(info.dollar.create_date, new Date())}
-                        </Text>
-                     }
-                  </InfoContainer>
-
-                  <Value pctChange={parseFloat(info.dollar.pctChange)}>
-                     {info.dollar && `R$ ${parseFloat(info.dollar.ask).toFixed(2)}`}
-                  </Value>
-               </DollarContainer>
+                     <Value pctChange={parseFloat(info.dollar.pctChange)}>
+                        {info.dollar && `R$ ${parseFloat(info.dollar.ask).toFixed(2)}`}
+                     </Value>
+                  </DollarContainer>
+               }
 
                {props.children}
             </Container>

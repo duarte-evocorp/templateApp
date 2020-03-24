@@ -41,8 +41,10 @@ Abaixo segue o que foi utilizado na criação deste template:
 - [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons) - Uma biblioteca com um grande pacote de icones;
 - [React Native Simple Toast](https://github.com/vonovak/react-native-simple-toast) - Componente Nativo Toast
 - [Date FNS](https://github.com/date-fns/date-fns#readme) - Biblioteca para manipulação de datas;
-- [React Navigation](https://reactnavigation.org/) - Biblioteca para gerenciamento de paginas;
-
+- [React Navigation](https://reactnavigation.org/) - Biblioteca para gerenciamento de rotas e navegação;
+- [Unform](https://github.com/Rocketseat/unform#readme) - O Unform é uma biblioteca focada no desempenho que ajuda a criar belos formulários no ReactJS e no React Native com o poder do desempenho descontrolado dos componentes e do React Hooks;
+- [React Native Masked Text](https://github.com/benhurott/react-native-masked-text#readme) - È um componente de máscaras simples para o React Native;
+- [Yup](https://github.com/jquense/yup) - Yup é um construtor de esquema JavaScript para análise e validação de valor;
 
 ## Começando
 
@@ -68,9 +70,17 @@ evoTemplateApp
 │   │   └── Button/
 │   │   │   └── index.js
 │   │   │   └── styles.js
+│   │   └── Formulario/
+│   │   │   └── Input/
+│   │   │   │   └── index.js
+│   │   │   │   └── styles.js
+│   │   │   └── Label/
+│   │   │   │   └── index.js
 │   │   └── Icons/
 │   │   │   └── index.js
 │   │   └── StatusBar/
+│   │   │   └── index.js
+│   │   └── Strong/
 │   │   │   └── index.js
 │   │   └── Text/
 │   │   │   └── index.js
@@ -86,11 +96,12 @@ evoTemplateApp
 │   │   └── ToastSettings.js
 │   │   └── index.js
 │   ├── helpers/
-│   │   └── index.js
 │   │   └── dataFormat.js
 │   │   └── getKeyByValue.js
+│   │   └── index.js
 │   │   └── normalize.js
 │   │   └── prefixInTypes.js
+│   │   └── tokenUtils.js
 │   ├── modules/
 │   │   ├── Information/
 │   │   │   └── actions.js
@@ -108,6 +119,10 @@ evoTemplateApp
 │   │   │   └── styles.js
 │   │   │   └── view.js
 │   │   ├── Home/
+│   │   │   └── index.js
+│   │   │   └── styles.js
+│   │   │   └── view.js
+│   │   ├── Form/
 │   │   │   └── index.js
 │   │   │   └── styles.js
 │   │   │   └── view.js

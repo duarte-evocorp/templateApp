@@ -2,6 +2,12 @@ import styled from 'styled-components/native';
 import { theme } from '../../styles';
 import { Normalize } from '../../helpers';
 
+
+export const ButtonContainer = styled.View`
+  flex-direction: row;
+  align-items: center;
+`;
+
 export const Container = styled.TouchableOpacity`
   background: ${props => props.danger ? theme.colors.danger : theme.colors.primary};
   height: ${Normalize.verticalScale(60)}px;
@@ -14,6 +20,7 @@ export const Container = styled.TouchableOpacity`
 `;
 
 export const Title = styled.Text`
-  color: ${theme.colors.white}
-  ${theme.fonts.h2}
+  color: ${theme.colors.white};
+  margin-right: ${props => props.iconName ? 30 : 0}px;
+  ${theme.fonts.h2};
 `;

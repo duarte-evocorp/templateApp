@@ -35,11 +35,18 @@ const sizes = {
 const fonts = {
     base: {
         fontFamily: "Gilroy-Light",
-        fontSize: sizes.big,
+        fontSize: sizes.big
     },
     title: {
         fontFamily: "Gilroy-Bold",
         fontSize: sizes.strongest
+    },
+    bold: {
+        fontFamily: "Gilroy-Bold"
+    },
+    label: {
+        fontFamily: "Gilroy-Light",
+        fontSize: sizes.bigger
     },
     caption: {
         fontFamily: "Gilroy-Medium",
