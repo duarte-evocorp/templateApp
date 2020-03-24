@@ -9,21 +9,17 @@
 </p>
 
 
-<!-- ## Tabela de Conteúdo
+## Tabela de Conteúdo
 
 - [Tabela de Conteúdo](#tabela-de-conte%C3%BAdo)
 - [Sobre o Projeto](#sobre-o-projeto)
-  - [Feito Com](#feito-com)
+- [Feito Com](#feito-com)
 - [Começando](#come%C3%A7ando)
-  - [Pré-requisitos](#pr%C3%A9-requisitos)
-  - [Estrutura de Arquivos](#estrutura-de-arquivos)
-  - [Instalação](#instala%C3%A7%C3%A3o)
-    - [Passo Adicional no Android](#passo-adicional-no-android)
-  - [Edição](#edi%C3%A7%C3%A3o)
-  - [Publicação](#publica%C3%A7%C3%A3o)
-- [Contribuição](#contribui%C3%A7%C3%A3o)
-- [Licença](#licen%C3%A7a)
-- [Contato](#contato) -->
+- [Pré-requisitos](#pr%C3%A9-requisitos)
+- [Estrutura de Arquivos](#estrutura-de-arquivos)
+- [Instalação](#instala%C3%A7%C3%A3o)
+- [Passo Adicional no Android](#passo-adicional-no-android)
+- [Edição](#edi%C3%A7%C3%A3o)
 
 
 ## Sobre o Projeto
@@ -43,7 +39,7 @@ Abaixo segue o que foi utilizado na criação deste template:
 - [Redux Saga](https://redux-saga.js.org/) - È uma biblioteca que gerencia requisições assíncronas;
 - [Styled Components](https://styled-components.com/) - 
 
-<!-- ## Começando
+## Começando
 
 Para conseguir utilizar o template, seja através do React Native CLI ou com uma cópia local dos arquivos, siga os passos abaixo.
 
@@ -51,7 +47,7 @@ Para conseguir utilizar o template, seja através do React Native CLI ou com uma
 
 Antes de seguirmos para as configurações e uso do template, é ideal que você tenha o ambiente configurado para criar e testar aplicativos em React Native, para isso você pode seguir o guia do link abaixo:
 
-[Ambiente React Native (Android/iOS)](https://github.com/Rocketseat/ambiente-react-native) -->
+[Ambiente React Native (Android/iOS)](https://github.com/Rocketseat/ambiente-react-native)
 
 ### Estrutura de Arquivos
 
@@ -62,21 +58,69 @@ evoTemplateApp
 ├── app/
 │   ├── assets/
 │   │   └── fonts/
-        └── images/
-│   ├── components/
+|   |   └── images/
+|   ├── components/
+|   |   └── Button/
+|   |   |   └── index.js
+|   |   |   └── styles.js
+|   |   └── Icons/
+|   |   |   └── index.js
 │   │   └── StatusBar/
 │   │   │   └── index.js
+|   |   └── Text/
+|   |   |   └── index.js
+|   |   └── Toast/
+|   |   |   └── index.js
 │   │   └── Welcome/
 │   │   │   └── index.js
 │   │   │   └── styles.js
 │   └── index.js
+|   ├── constants/
+|   |   └── data_types.js
+|   |   └── PAGES.
+|   |   └── ToastSettings.js
+|   |   └── index.js
 │   ├── helpers/
 │   │   └── index.js
-│   │   └── normalize.js
+│   │   └── dataFormat.js
+|   |   └── getKeyByValue.js
+|   |   └── normalize.js
+|   |   └── prefixInTypes.js
+|   ├── modules/
+|   |   ├── Information/
+|   |   |   └── actions.js
+|   |   |   └── index.js
+|   |   |   └── reducers.js
+|   |   |   └── saga.js
+|   |   |   └── types.js
+|   ├── pages/
+|   |   ├── Componentes/
+|   |   |   └── index.js
+|   |   |   └── styles.js
+|   |   |   └── view.js
+|   |   ├── Details/
+|   |   |   └── index.js
+|   |   |   └── styles.js
+|   |   |   └── view.js
+|   |   ├── Home/
+|   |   |   └── index.js
+|   |   |   └── styles.js
+|   |   |   └── view.js
+|   ├── routers/
+|   |   └── index.js
+|   ├── services/
+|   |   └── Api.js
+|   |   └── ErrorResponseHandler.js
+|   |   └── index.js
+|   |   └── MessageResponseHandler.js
+|   ├── store/
+|   |   └── index.js
+|   |   └── middlewares.js
+|   |   └── reducers.js
+|   |   └── sagas.js
 │   ├── styles/
 │   │   └── images.js
 │   │   └── index.js
-│   │   └── images.js
 │   │   └── theme.js
 │   └── App.js
 ├── babel.config.js
@@ -144,53 +188,28 @@ apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 ---
 
-<!-- ### Edição
+### Edição
 
 Nesta seção haverão instruções caso você queira editar o template, explicando para que os diretórios são utilizados e também os arquivos de configuração.
 
-- **src** - Diretório contendo todos os arquivos da aplicação, é criado um diretório `src` para que o código da aplicação possa ser isolado em um diretório e facilmente portado para outros projetos, se necessário;
+- **app** - Diretório contendo todos os arquivos da aplicação, é criado um diretório `app` para que o código da aplicação possa ser isolado em um diretório e facilmente portado para outros projetos, se necessário;
 
-  - **config** - Diretório para guardar os arquivos de configuração da aplicação, por exemplo, a configuração de uso do Reactotron e configuração de inicialização do Firebase;
+- **assets** - Diretório para armazenar imagens, fonts ou qualquer mídia em geral que possam ser utilizadas na aplicação;
 
-    - **ReactotronConfig.js** - Arquivo contendo a configuração do Reactotron para ser usado na aplicação;
+- **pages** - Diretório onde ficam as páginas (telas) da aplicação, como forma de padronização e boas práticas toda página fica dentro de um diretório com seu nome;
 
-  - **images** - Diretório para armazenar imagens em geral que possam ser utilizadas na aplicação, esse diretório pode ser renomeado para `assets` e dentro de `assets` criar um novo diretório para guardar somente as imagens, assim é possível ter um diretório para guardar todo tipo de arquivo, e não apenas imagens;
+- **components** - Diretório onde ficam os componentes utilizados por toda a aplicação, podendo ser deletado caso não seja utilizado;
 
-  - **pages** - Diretório onde ficam as páginas (telas) da aplicação, como forma de padronização e boas práticas toda página fica dentro de um diretório com seu nome;
+- **index.js** - Arquivo com toda a lógica da página, tal como os componentes visuais a serem renderizados;
 
-    - **Main** - Diretório exemplo de uma página cujo nome é **Main**, por padrão foi adotado usar sempre como nome do diretório o nome da página em camelCase, dentro desse diretório é necessária a criação ao menos do arquivo `index.js`;
+- **services** - Diretório onde serão criados os arquivos relacionados a serviços utilizados na aplicação, por exemplo, requisições HTTP, autenticação com Firebase ou qualquer outro serviço que for utilizado;
 
-      - **index.js** - Arquivo com toda a lógica da página, tal como os componentes visuais a serem renderizados;
+- **api.js** - Arquivo com a configuração da biblioteca Axios para envio de requisições HTTP, o endereço que vem configurado de exemplo pode ser modificado;
 
-  - **services** - Diretório onde serão criados os arquivos relacionados a serviços utilizados na aplicação, por exemplo, requisições HTTP, autenticação com Firebase ou qualquer outro serviço que for utilizado;
-
-    - **api.js** - Arquivo com a configuração da biblioteca Axios para envio de requisições HTTP, o endereço que vem configurado por padrão é para a API do Github;
-
-  - **index.js** - Arquivo responsável por centralizar o código do diretório `src`, nele são chamadas as rotas tal como qualquer outra configuração que precise ser executada na inicialização da aplicação, ele é como um _Entry Point_ do diretório `src`;
-
-  - **routes.js** - Arquivo com as configurações de navegação da aplicação, nele são criados os Navigators disponibilizados na biblioteca React Navigation;
-
-- **.editorconfig** - Arquivo destinado à configuração do plugin Editor Config, que padroniza algumas configurações para o editor em diferentes ambientes;
-
-- **.eslintrc.json** - Arquivo de configuração do ESLint, é nele que são inseridas as regras e configurações de Linting do projeto, tal como a configuração do Resolver para o Babel Plugin Root Import e configuração da variável global `__DEV__`;
-
-- **babel.config.js** - Arquivo de configuração do Babel, é nele que é configurado o Babel Plugin Root Import para aceitar imports absolutos na aplicação usando o diretório `src` como raiz;
+- **routers** - Diretório onde as configurações de navegação da aplicação, nele são criados os Navigators disponibilizados na biblioteca React Navigation;
 
 - **dependencies.json** - Arquivo contendo apenas um objeto com a lista de dependências que devem ser instaladas na aplicação, vale lembrar que as dependências que já vem por padrão no projeto como `react` e `react-native` não precisam estar nessa lista, a menos que você queira gerenciar a versão dessas libs;
 
-- **devDependencies.json** - Arquivo contendo apenas um objeto com a lista de dependências de desenvolvimento que devem ser instaladas na aplicação, vale lembrar que as dependências de desenvolvimento que já vem por padrão no projeto como `@babel/core`, `@babel/runtime`, entre outras, não precisam estar nessa lista, a menos que você queira gerenciar a versão dessas libs;
-
 - **index.js** - Arquivo raiz da aplicação, também chamado de _Entry Point_, é o primeiro arquivo chamado no momento do build e execução da aplicação, nele é chamado o arquivo `src/index.js` que por sua vez chama as rotas da aplicação;
 
-- **jsconfig.json** - Arquivo de configuração do JavaScript no Editor, ele é o responsável por ativar o Auto Complete de códigos JavaScript na aplicação;
-
 - **package.json** - Diferente dos projetos comuns, esse arquivo tem as configurações necessárias para a publicação do Template no NPM, para saber mais sobre isso veja a seção abaixo.
-
-
-## Licença
-
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações. -->
-
-<!-- ## Contato
-
-Rocketseat - [Github](https://github.com/rocketseat) - **oi@rocketseat.com.br** -->
