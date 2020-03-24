@@ -11,7 +11,12 @@ function normalize(size) {
 }
 
 const colors = {
-    white: '#FFFFFF'
+    primary: '#663C92',
+    primaryDark: '#57347C',
+    white: '#FFFFFF',
+    danger: '#ED5181',
+    dangerDark: '#BD4066',
+    sucess: '#8cba51'
 }
 
 const sizes = {
@@ -28,13 +33,25 @@ const sizes = {
 }
 
 const fonts = {
+    base: {
+        fontFamily: "Gilroy-Light",
+        fontSize: sizes.big,
+    },
     title: {
         fontFamily: "Gilroy-Bold",
         fontSize: sizes.strongest
     },
+    caption: {
+        fontFamily: "Gilroy-Medium",
+        fontSize: sizes.bigger
+    },
     h1: {
         fontFamily: "Gilroy-Light",
         fontSize: sizes.strongest
+    },
+    h2: {
+        fontFamily: "Gilroy-Light",
+        fontSize: sizes.bigTitle
     }
 }
 

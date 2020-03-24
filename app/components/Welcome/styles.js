@@ -5,14 +5,23 @@ export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 `;
 
-export const Title = styled.Text`
-  color: ${theme.colors.white};
-  ${theme.fonts.title}
+export const DollarContainer = styled.View`
+  flex: 6;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 `;
 
-export const TemplateType = styled.Text`
-  color: ${theme.colors.white};
-  ${theme.fonts.h1}
+export const InfoContainer = styled.View`
+  
+`;
+
+export const Value = styled.Text`
+  color: ${props => props.pctChange < 0 ? theme.colors.danger : theme.colors.sucess};
+  flex: 3;
+  text-align: right;
+  ${theme.fonts.caption}
 `;

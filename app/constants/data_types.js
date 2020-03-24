@@ -1,0 +1,9 @@
+export const horaMinuto = "HH:mm";   // 13:32
+export const dataPadrao = 'dd/MM/yyyy';    // 11/09/2018
+export const dataPadraoMesAno = 'MM/yyyy';    // 09/2018
+export const dataPadraoEUA = 'yyyy-MM-dd'; // 2018-09-11
+export const dataMesPorExtensoEAno = "dd 'de' MMMM' de 'yyyy";   // 11 de setembro de 2018
+export const dataDiaMesAnoEHora = "dd/MM/yyyy 'ás' HH:mm'";   // 23/03/2020 ás 17:23
+export const dataDiaMesAnoEHoraPadraoEUA = 'yyyy-MM-dd HH:mm:ss';   // 2020-03-23 17:22:25
+export const dataHoraDiaMesAno = "HH:mm'h' 'ás' dd/MM/yyyy'";   // 17:21 ás 23/03/2020
+export const diaMes = "dd 'de' MMM'"; // 26 de Set
