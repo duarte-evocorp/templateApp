@@ -166,6 +166,11 @@ react-native init AwesomeExample --template evotemplateapp
 
 Com isso o projeto será criado com todas as dependências do template devidamente instaladas e linkadas, tal como os arquivos de configuração que são copiados para o projeto.
 
+3. Para instalar as fontes personalizadas utilize o seguinte comando:
+```java
+react-native link
+``` 
+
 ---
 
 #### Passo Adicional no Android
